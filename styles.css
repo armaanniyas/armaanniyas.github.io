@@ -1,0 +1,231 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f4f8;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .cta {
+    background-color: white;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #336699;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0 0;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f4f8;
+    color: #003366;
+}
+
+.about .content {
+    max-width: 60%;
+}
+
+.about .content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about .content p {
+    margin-bottom: 20px;
+}
+
+.about .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .stats div {
+    text-align: center;
+}
+
+.about .stats h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.about .stats p {
+    margin: 5px 0 0;
+}
+
+.about .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.experience, .education, .expertise, .portfolio, .contact-cta, footer {
+    padding: 50px;
+}
+
+.experience ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience li, .education li {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.experience h2, .education h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.experience h3, .education h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #336699;
+}
+
+.expertise-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expertise-items div {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.expertise-items h3 {
+    color: #003366;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-items img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.contact-cta {
+    text-align: center;
+    background-color: #336699;
+    color: white;
+    border-radius: 10px;
+}
+
+.contact-cta h2 {
+    margin: 0 0 20px;
+    font-size: 36px;
+}
+
+.contact-cta .download-cv {
+    background-color: white;
+    color: #003366;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer form input, footer form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form button {
+    background-color: #336699;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer .social {
+    margin-bottom: 20px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
