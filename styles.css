@@ -3,50 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #002147; /* Navy blue */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Header */
-header {
-    background-color: #002147; /* Navy blue */
-    color: white;
-    padding: 20px 0;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.cta {
-    background-color: white;
-    color: #002147; /* Navy blue */
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.cta:hover {
-    background-color: #f0f0f0;
+    text-align: center; /* Center align all text and elements */
 }
 
 /* Hero Section */
 .hero {
-    background-color: #e1e8ed; /* Light navy */
+    background-color: #000000; /* Black background */
     text-align: center;
     padding: 100px 0;
 }
@@ -54,11 +24,28 @@ header {
 .hero h1 {
     margin: 0;
     font-size: 60px;
-    color: #002147; /* Navy blue */
+    color: #ffffff; /* White text */
 }
 
 .hero p {
     font-size: 24px;
     margin-top: 10px;
-    color: #002147; /* Navy blue */
+    color: #ffffff; /* White text */
+}
+
+/* CTA Button */
+.cta {
+    background-color: #ffffff; /* White button */
+    color: #000000; /* Black text */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 50px; /* Add space above the button */
+}
+
+.cta:hover {
+    background-color: #444444; /* Dark gray on hover */
+    color: #ffffff; /* White text on hover */
 }
