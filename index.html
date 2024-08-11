@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>Full Screen Image</title>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">  <style>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet');
+
     body {
       margin: 0;
       background-image: url('Background.jpg'); /* Replace 'your_image.jpg' with your image path */
@@ -17,27 +19,30 @@
     footer {
       background-color: white;
       text-align: center;
-      padding: 20px;
+      padding: 5px;
     }
 
     button {
-      background-color: grey; /* Initial button color */
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-family: "VT323", monospace;  }
+        font-family: "VT323", monospace;
+        color: #c0c0c0;
+        background-color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 700;
+        border: 2px solid #FFFFFF;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
 
     button:hover {
-      background-color: black; /* Hovered button color */
+        color: black;
     }
   </style>
 </head>
 <body>
-  <footer>
+  <div style="flex: 1;"></div> <footer>
     <a href="https://www.linkedin.com/in/armaanniyas/" target="_blank">
-      <button>My LinkedIn</button>
+      <button>Connect with me on LinkedIn</button>
     </a>
   </footer>
 </body>
