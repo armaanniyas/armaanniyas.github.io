@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Full Screen Image</title>
+  <title>Armaan Niyas</title>
+  <link rel="shortcut icon" type="image/x-icon" href="AN.ico">
   <style>
-     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet');
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet');
 
     body {
       margin: 0;
@@ -14,6 +15,13 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      position: relative; /* Needed for absolute positioning */
+    }
+
+    .top-right {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
 
     footer {
@@ -26,34 +34,40 @@
     }
 
     button {
-        font-family: "VT323", monospace;
-        color: #c0c0c0;
-        background-color: rgba(255, 255, 255, 0);
-        text-decoration: none;
-        font-size: 1.25rem;
-        font-weight: 700;
-        border: none;
-        padding: 10px 20px;
-        transition: all 0.3s ease;
+      font-family: "VT323", monospace;
+      color: #c0c0c0;
+      background-color: rgba(255, 255, 255, 0);
+      text-decoration: none;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border: none;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
     }
 
     button:hover {
-        color: black;
+      color: rgb(255, 255, 255);
     }
   </style>
 </head>
 <body>
-    <div style="flex: 1;"></div>
-    <footer id="myFooter">
-      <a href="https://www.linkedin.com/in/armaanniyas/" target="_blank">
-        <button>Connect with me on LinkedIn</button>
-      </a>
-    </footer>
-    <script>
-      setTimeout(function() {
-        document.getElementById("myFooter").style.opacity = "1";
-        document.getElementById("myFooter").style.transform = "translateY(0)";
-      }, 2000); // 5000 milliseconds = 5 seconds
-    </script>
+  <div class="top-right">
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfrKxbxXMRrRGtnnHDnHVWMdvzVPSjSwDmTWQJNbFvmjpLdhSjpcvKQLbCbNxsgjjCZsHL">
+      <button>Let's Talk</button>
+    </a>
+  </div>
+  <div style="flex: 1;"></div>
+  <footer id="myFooter">
+    <a href="https://www.linkedin.com/in/armaanniyas/" target="_blank">
+      <button>Connect with me on LinkedIn</button>
+    </a>
+  </footer>
+  <script>
+    setTimeout(function() {
+      document.getElementById("myFooter").style.opacity = "1";
+      document.getElementById("myFooter").style.transform = "translateY(0)";
+    }, 2000); // 2000 milliseconds = 2 seconds
+  </script>
 </body>
 </html>
+
