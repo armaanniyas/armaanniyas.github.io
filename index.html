@@ -4,7 +4,7 @@
   <title>Armaan Niyas</title>
   <link rel="shortcut icon" type="image/x-icon" href="AN.ico">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=VT323&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=VT323&display=swap');
 
     body {
       margin: 0;
@@ -50,16 +50,17 @@
 
     /* Arrow button */
     .scroll-arrow {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      position: fixed;
       font-size: 2rem;
-      color: #fff;
       background-color: transparent;
       border: none;
       cursor: pointer;
       animation: bounce 2s infinite;
+      z-index: 1000; /* Ensure it is above other content */
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
     }
 
     @keyframes bounce {
@@ -80,7 +81,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #ffffff; /* You can customize this color */
+      background-color: #ffffff; /* Customize this color */
       color: #c6c4c4;
       padding: 20px;
       text-align: center;
@@ -94,21 +95,23 @@
       color: #282828;
     }
 
-    /* Experience Alignment */
-    .experience-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
+    /* Title and paragraph adjustments */
+    .about-me h1 {
+      font-family: 'Arimo', sans-serif; /* New font for h1 */
+      letter-spacing: 5px; /* Adjust the letter-spacing for the name */
     }
 
-    .experience-title {
-      text-align: left;
-      font-style: italic;
+    .about-me p {
+      line-height: 1.5; /* Adjust the line-height for the paragraphs */
     }
 
-    .experience-year {
-      text-align: right;
-      font-style: italic;
+    /* Footer section */
+    .footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.75rem;
     }
 
     /* Social media icons */
@@ -147,12 +150,12 @@
   <!-- Full-screen About Me section -->
   <div class="about-me" id="aboutMe">
     <div>
-      <h1>Armaan Niyas</h1>
+      <h1>ARMAAN NIYAS</h1>
       <p>
         Fueling change through altruistic innovation, I am on a mission to create tech that makes a difference. Engineering a world powered by AI, enhancing human potential and doing good for the future of humanity.
       </p>
       <p>
-      Explore my most recent ventures on 
+        Explore my most recent ventures on 
         <a href="https://www.linkedin.com/in/armaanniyas/" target="_blank">LinkedIn</a>, 
         <a href="https://www.facebook.com/profile.php?id=61562757895936" target="_blank">Facebook</a>, or 
         <a href="https://x.com/armaanniyas_" target="_blank">X</a> (formerly Twitter).
@@ -171,6 +174,11 @@
         </a>
       </div>
     </div>
+  </div>
+
+  <!-- Footer section -->
+  <div class="footer">
+    Armaan Niyas @ 2024
   </div>
 
   <script>
