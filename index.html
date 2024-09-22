@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Armaan Niyas</title>
   <link rel="shortcut icon" type="image/x-icon" href="AN.ico">
   <style>
@@ -9,6 +11,7 @@
     body {
       margin: 0;
       font-family: "Radio Canada Big", sans-serif;
+      overflow-x: hidden;
     }
 
     /* Full-screen background image */
@@ -88,11 +91,6 @@
       margin: 0 auto;
       max-width: 820px;
       transition: all 0.3s ease-in-out;
-      cursor: pointer;
-    }
-
-    .about-me:hover {
-      color: #282828;
     }
 
     /* Title and paragraph adjustments */
@@ -134,52 +132,25 @@
       transform: scale(1.2);
     }
 
-    /* Media Query for Mobile Screens */
-    @media screen and (max-width: 768px) {
-      .full-screen-image {
-        height: auto; /* Allow it to adjust naturally */
-        background-size: cover;
-      }
-
-      .top-right {
-        top: 10px;
-        right: 10px;
-      }
-
-      button {
-        font-size: 1rem; /* Smaller button text on mobile */
-        padding: 8px 16px;
-      }
-
-      .scroll-arrow {
-        font-size: 1.5rem; /* Adjust arrow size */
-        bottom: 10px;
-      }
-
-      .about-me {
-        padding: 10px;
-        font-size: 0.9rem; /* Reduce font size for smaller screens */
-        max-width: 90%; /* Reduce content width */
-      }
-
-      .about-me h1 {
-        font-size: 1.75rem; /* Smaller heading size */
-      }
-
-      .about-me p {
-        font-size: 1rem;
-        line-height: 1.4;
-      }
-
-      .social-media-icons img {
-        width: 25px;
-        height: 25px; /* Smaller icons on mobile */
-      }
-
-      .footer {
-        font-size: 0.6rem; /* Smaller footer text */
-      }
+    /* Overlay message for portrait mode */
+    #rotate-message {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      z-index: 2000;
+      text-align: center;
+      padding: 20px;
     }
+
   </style>
   <script defer data-domain="armaanniyas.com" src="https://plausible.io/js/script.js"></script>
 </head>
@@ -206,7 +177,7 @@
         Explore my most recent ventures on 
         <a href="https://www.linkedin.com/in/armaanniyas/" target="_blank">LinkedIn</a>, 
         <a href="https://www.facebook.com/profile.php?id=61562757895936" target="_blank">Facebook</a>, or 
-        <a href="https://x.com/armaanniyas_" target="_blank">X</a> (formerly Twitter).
+        <a href="https://x.com/armaanniyas_" target="_blank">X</a>.
       </p>
       
       <!-- Social Media Icons -->
@@ -229,10 +200,28 @@
     Armaan Niyas @ 2024
   </div>
 
+  <!-- Rotate message overlay -->
+  <div id="rotate-message">
+    Please rotate your device to landscape mode for the best viewing experience.
+  </div>
+
   <script>
     function scrollToAboutMe() {
       document.getElementById('aboutMe').scrollIntoView({ behavior: 'smooth' });
     }
+
+    // Detect orientation change and display the rotate message
+    function checkOrientation() {
+      const rotateMessage = document.getElementById('rotate-message');
+      if (window.innerHeight > window.innerWidth) {
+        rotateMessage.style.display = 'flex';
+      } else {
+        rotateMessage.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('resize', checkOrientation);
+    window.addEventListener('load', checkOrientation);
   </script>
 
 </body>
