@@ -142,25 +142,6 @@
       transform: scale(1.2);
     }
 
-    /* Overlay message for portrait mode */
-    #rotate-message {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
-      z-index: 2000;
-      text-align: center;
-      padding: 20px;
-    }
-
   </style>
   <script defer data-domain="armaanniyas.com" src="https://plausible.io/js/script.js"></script>
 </head>
@@ -210,12 +191,11 @@
     Armaan Niyas @ 2024
   </div>
 
-  <!-- Rotate message overlay -->
-  <div id="rotate-message">
-    Please rotate your device to landscape mode for the best viewing experience.
-  </div>
-
   <script>
     function scrollToAboutMe() {
       document.getElementById('aboutMe').scrollIntoView({ behavior: 'smooth' });
-   
+    }
+  </script>
+
+</body>
+</html>
