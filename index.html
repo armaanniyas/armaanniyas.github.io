@@ -33,7 +33,7 @@
       right: 20px;
     }
 
-    /* Button Styling */
+    /* General Button Styling */
     button {
       font-family: "VT323", monospace;
       color: #c0c0c0;
@@ -47,8 +47,18 @@
       cursor: pointer;
     }
 
-    button:hover {
-      color: #ffffff;
+    /* Hover effect on laptops/desktops */
+    @media (hover: hover) {
+      button:hover {
+        color: #000000; /* Black text on hover for laptops/desktops */
+      }
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      button {
+        color: #000000; /* Always black text for mobile view */
+      }
     }
 
     /* Arrow button */
@@ -208,21 +218,4 @@
   <script>
     function scrollToAboutMe() {
       document.getElementById('aboutMe').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Detect orientation change and display the rotate message
-    function checkOrientation() {
-      const rotateMessage = document.getElementById('rotate-message');
-      if (window.innerHeight > window.innerWidth) {
-        rotateMessage.style.display = 'flex';
-      } else {
-        rotateMessage.style.display = 'none';
-      }
-    }
-
-    window.addEventListener('resize', checkOrientation);
-    window.addEventListener('load', checkOrientation);
-  </script>
-
-</body>
-</html>
+   
